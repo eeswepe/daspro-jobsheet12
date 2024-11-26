@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PenjumlahanRekursif {
     static int penjumlahanRekursif(int n) {
         if (n == 0) {
@@ -8,7 +10,11 @@ public class PenjumlahanRekursif {
     }    
 
     public static void main(String[] args) {
-        System.out.println(penjumlahanRekursif(5));
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Masukkan bilangan: ");
+        int bilangan = sc.nextInt();
+        System.out.println(penjumlahanRekursif(bilangan));
+        sc.close();
     }
 
 }
